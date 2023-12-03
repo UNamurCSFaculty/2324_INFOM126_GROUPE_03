@@ -191,4 +191,8 @@ That's it, you can now go to https://pirate.example.org/admin/ to see the result
 
 ## License
 
+
+
+This project was made in 2020-2021 by E-kot,
+E-kot is a "kot à projet" from the University of Namur
 The source code is under an [MIT license](./LICENSE).
