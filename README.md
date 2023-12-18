@@ -28,6 +28,16 @@ $ python manage.py migrate
 $ python manage.py createsuperuser
 ```
 
+Setup everything in a virtual environment with poetry:
+
+```console
+$ pip install poetry
+$ poetry install
+$ poetry shell
+$ python manage.py migrate
+$ python manage.py createsuperuser
+```
+
 Run the server in debug mode:
 
 ```console
