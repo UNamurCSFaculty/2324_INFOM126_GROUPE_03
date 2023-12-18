@@ -4,9 +4,9 @@ Phishstick is a privacy-by-design Django phishing framework. It was created to c
 
 The way it works is by generating a completely random identifier for each recipient when sending emails. Another random identifier is generated for each group (or department) assigned to the recipients. Both identifiers are included in the emails and are stored in the database. Once the messages have been sent, the mailing list can therefore be discarded while still making the results available anonymously by group.
 
-![Results by target pool](./doc/screenshot_pools.png)
+![Results by target pool](./img/screenshot_pools.png)
 
-![Results by target](./doc/screenshot_targets.png)
+![Results by target](./img/screenshot_targets.png)
 
 ## **Disclaimer of liability**
 
