@@ -30,5 +30,5 @@ jobs:
     - name: Coverage report and Run Tests
       run: |
         pip install coverage
-        poetry coverage run manage.py test
-        poetry coverage report
+        poetry run coverage run manage.py test
+        poetry run coverage report
