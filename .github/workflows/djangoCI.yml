@@ -29,6 +29,7 @@ jobs:
         poetry install --no-root
     - name: Coverage report and Run Tests
       run: |
-        python -m pip install coverage
+        ls
+        source $HOME/.poetry/env
         poetry run coverage run manage.py test
         poetry run coverage report
