@@ -4,8 +4,6 @@ FROM python:3-alpine
 
 ENV PYTHONUNBUFFERED=1
 ENV DEBUG=False
-ARG ALLOWED_HOSTS=phish.e-kot.be
-ENV ALLOWED_HOSTS=phish.e-kot.be
 
 
 WORKDIR /usr/src/app/
