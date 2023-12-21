@@ -4,7 +4,7 @@ FROM python:3-alpine
 
 ENV PYTHONUNBUFFERED=1
 ENV DEBUG=False
-
+ENV ALLOWED_HOSTS=phish.e-kot.be
 WORKDIR /usr/src/app/
 
 COPY ./requirements.txt ./
