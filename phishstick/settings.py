@@ -29,10 +29,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY',
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG', default='true').lower() == 'true'
 
-try:
-    ALLOWED_HOSTS = os.environ['ALLOWED_HOSTS'].split(',')
-except KeyError:
-    ALLOWED_HOSTS = []
+
+ALLOWED_HOSTS = ["phish.e-kot.be"]
+
 
 
 # Application definition
