@@ -3,7 +3,7 @@
 FROM python:3-alpine
 
 ENV PYTHONUNBUFFERED=1
-ENV DEBUG=True
+ENV DEBUG=False
 
 
 WORKDIR /usr/src/app/
