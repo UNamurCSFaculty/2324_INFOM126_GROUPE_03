@@ -22,12 +22,26 @@ The way it works is by generating a completely random identifier for each recipi
 
 ```console
 $ python3 -m venv venv
-$ source venv/bin/activate
+$ source venv/bin/activate or .\venv\Scripts\activate (in windows)
 $ pip install -r requirements.txt
 $ python manage.py migrate
 $ python manage.py createsuperuser
 ```
 
+Run the server in debug mode:
+```console
+$ python manage.py runserver
+```
+
+Send emails:
+```console
+$ python manage.py send_emails addresses.csv
+```
+
+Exit the virtual environment:
+```console
+$ deactivate
+```
 
 
 ### Setup everything in a virtual environment with poetry: (Recommended)
@@ -54,6 +68,11 @@ $ python manage.py send_emails addresses.csv
 If some dependencies are missing, you can install them with `poetry add <package>`.
 If you want to remove a dependency, use `poetry remove <package>`.
 If you want to update a dependency, use `poetry update <package>`.
+
+Exit the virtual environment:
+```console
+$ exit
+```
 
 ### Use commitizen to make commits: (recommended)
 You can use Commitizen into your project for standardized commit messages (conventional commits). Here's how:
