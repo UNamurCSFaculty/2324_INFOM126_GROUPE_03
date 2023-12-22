@@ -1,4 +1,5 @@
 # Phishstick
+Original repository: <https://github.com/tarhses/phishstick>
 
 Phishstick is a privacy-by-design Django phishing framework. It was created to conduct an awareness campaign at the University of Namur, Belgium. In particular, it offers anonymity in the results, a feature that is not currently available in [Gophish](https://github.com/gophish/gophish) (see [this issue](https://github.com/gophish/gophish/issues/1139)).
 
