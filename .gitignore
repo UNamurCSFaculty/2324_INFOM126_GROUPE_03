@@ -6,3 +6,9 @@ __pycache__/
 
 # Ignore Poetry-specific files
 poetry.lock
+
+# Ignore environment file
+.env
+venv/
+my_env/
+```
