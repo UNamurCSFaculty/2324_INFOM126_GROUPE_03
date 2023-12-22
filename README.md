@@ -18,7 +18,7 @@ The way it works is by generating a completely random identifier for each recipi
 
 ## Getting started
 
-Setup everything in a virtual environment:
+### Setup everything in a virtual environment:
 
 ```console
 $ python3 -m venv venv
@@ -28,7 +28,10 @@ $ python manage.py migrate
 $ python manage.py createsuperuser
 ```
 
-Setup everything in a virtual environment with poetry:
+
+
+### Setup everything in a virtual environment with poetry: (Recommended)
+You can use Poetry to manage your Python project dependencies efficiently. Follow these steps:
 
 ```console
 $ pip install poetry
@@ -39,20 +42,42 @@ $ python manage.py createsuperuser
 ```
 
 Run the server in debug mode:
-
 ```console
 $ python manage.py runserver
 ```
 
 Send emails:
-
 ```console
 $ python manage.py send_emails addresses.csv
 ```
 
+If some dependencies are missing, you can install them with `poetry add <package>`.
+If you want to remove a dependency, use `poetry remove <package>`.
+If you want to update a dependency, use `poetry update <package>`.
+
+### Use commitizen to make commits: (recommended)
+You can use Commitizen into your project for standardized commit messages (conventional commits). Here's how:
+```console
+git add . 
+cz commit
+```
+PS: Make attention to the folder where you are, if you are in the root folder of the project, you will commit all the project, if you are in the specific folder, you will commit only the specific folder.
+
+if you want to make a bump version, you can use:
+```console
+cz bump --increment <major|minor|patch>
+```
+
+Don't forget to push your commits:
+```console
+git push
+```
+
+
+
 For more information, see the [next section](#usage). To deploy this application in a production environment, please first refer to [Django's documentation](https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/).
 
-The following environment variables are available:
+### The following environment variables are available:
 
 | Name                  | Description                                                                                                                                                                    | Default value            |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------ |
@@ -200,8 +225,6 @@ Done. All emails sent.
 That's it, you can now go to https://pirate.example.org/admin/ to see the results.
 
 ## License
-
-
 
 This project was made in 2020-2021 by E-kot,
 E-kot is a "kot à projet" from the University of Namur
