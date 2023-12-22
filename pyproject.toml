@@ -14,8 +14,17 @@ Django = "4.0.4"
 gunicorn = "20.1.0"
 sqlparse = "0.4.2"
 whitenoise = "6.1.0"
+commitizen = "^3.13.0"
 
 
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+tag_format = "$version"
+version_scheme = "pep440"
+version_provider = "poetry"
+update_changelog_on_bump = true
+major_version_zero = true
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
