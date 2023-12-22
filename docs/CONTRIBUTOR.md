@@ -39,10 +39,37 @@ https://docs.djangoproject.com/en/dev/internals/contributing/writing-code/coding
 - Python :\
 https://peps.python.org/pep-0008/
 
-## Politiques de Publication -> Corentin
+## Politiques de Publication 
+## Aperçu de la Politique de Publication
 
-- Aperçu de la politique de publication
-- Schéma de publication
-- Fréquence des publications
+Notre projet suit les principes du [versionnement sémantique](https://semver.org/lang/fr/) en utilisant [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) pour numéroter nos versions, et structurer le contenu des commits. Cela signifie que chaque commit suit une convention de "commentaires" identique, ce qui simplifie la gestion des versions et la communication des changements.
 
--> Release si nouvelle features -> Sous release suite à la découverte de bug
+## Schéma de Publication
+
+Nous utilisons un schéma de versionnement MAJEUR.MINEUR.PATCH, où chaque segment a une signification spécifique :
+- MAJEUR pour des changements majeurs incompatibles avec les versions antérieures (par exemple, des changements de conception majeurs, des changements de dépendances, etc.),
+- MINEUR pour des ajouts compatibles avec les versions antérieures,
+- PATCH pour des corrections de bugs compatibles avec les versions antérieures.
+
+## Fréquence des Publications
+
+La fréquence des publications dépend des besoins du projet. Actuellement, le projet est considéré comme stable.
+Les versions seront publiées si de nouvelles fonctionnalités sont demandées, si des corrections de bugs critiques sont nécéssaires, ou de tout changement majeur qui nécessite une mise à jour.
+
+Nous n'avons pas de calendrier de publication fixe pour le moment, mais plutôt une approche basée sur les besoins. Si de nouvelles fonctionnalités sont nécessaires ou si des problèmes critiques sont découverts, nous pouvons déclencher un nouveau cycle de publication.
+
+## Conditions pour une Nouvelle Version
+
+Une nouvelle version est déclenchée lorsque des changements significatifs doivent être apportés au projet. Cela peut inclure l'ajout de nouvelles fonctionnalités, la correction de bugs critiques, ou tout autre changement important qui affecte l'expérience utilisateur.
+
+## Sous-Release Suite à la Découverte d'un Bug
+
+En cas de découverte d'un bug critique dans une version existante, l'équipe de développement devra publier des sous-versions (patch releases) rapidement pour résoudre ces problèmes sans attendre le prochain cycle de publication majeur. Si ce n'est pas un bug critique, il peut être ajouté à la liste des tâches pour le prochain cycle de publication.
+
+## Pull requests et tests avec GitHub Actions
+
+Les pull requests sont utilisées pour gérer les modifications apportées au code source (les changements léger dans la documentations ne doivent pas obligatoirement passer par des pulls requests). Ces pull requests sont ensuite testées par GitHub Actions pour s'assurer que les modifications apportées ne cassent pas le code existant. Si les tests échouent, la pull request est rejetée et le contributeur doit corriger les problèmes avant de soumettre une nouvelle pull request. Si les tests réussissent, la pull request est fusionnée dans la branche principale. Toute release doit s'assurer que les tests passent avec succès.
+
+## Utilisation de la Documentation du Changelog
+
+Nous encourageons les contributeurs et les utilisateurs à consulter régulièrement le changelog pour suivre les mises à jour et les modifications apportées à chaque version du projet. De plus la documentation du changelog est nécessaire pour chaque nouvelle version, donc nous encourageons les contributeurs à documenter leurs changements dans le changelog via l'usage d'outils comme commitizen.
