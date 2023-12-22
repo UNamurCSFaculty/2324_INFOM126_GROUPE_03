@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "2324-infom126-groupe-03"
-version = "0.2.0"
+version = "0.2.1"
 description = ""
 authors = ["creuther01", "djedje-cyber", "ton-s"]
 readme = "README.md"
