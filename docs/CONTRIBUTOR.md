@@ -54,7 +54,7 @@ Nous utilisons un schéma de versionnement MAJEUR.MINEUR.PATCH, où chaque segme
 ### Fréquence des Publications
 
 La fréquence des publications dépend des besoins du projet. Actuellement, le projet est considéré comme stable.
-Les versions seront publiées si de nouvelles fonctionnalités sont demandées, si des corrections de bugs critiques sont nécéssaires, ou de tout changement majeur qui nécessite une mise à jour.
+Les versions seront publiées si de nouvelles fonctionnalités sont demandées, si des corrections de bugs critiques sont nécéssaires, ou pour tout changement majeur qui nécessite une mise à jour.
 
 Nous n'avons pas de calendrier de publication fixe pour le moment, mais plutôt une approche basée sur les besoins. Si de nouvelles fonctionnalités sont nécessaires ou si des problèmes critiques sont découverts, nous pouvons déclencher un nouveau cycle de publication.
 
