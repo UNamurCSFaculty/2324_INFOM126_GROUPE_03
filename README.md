@@ -73,6 +73,8 @@ Don't forget to push your commits:
 git push
 ```
 
+PS: if you want to see yours changes in the changelog you must create a feature or write someting in breaking change
+
 
 
 For more information, see the [next section](#usage). To deploy this application in a production environment, please first refer to [Django's documentation](https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/).
