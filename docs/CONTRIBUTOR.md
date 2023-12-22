@@ -13,17 +13,30 @@
 - Critères pour fusionner les branches dans la branche principale -> Regarder au lien et Merge avec main si tout les github actions sont passé
 - Configuration des permissions pour les branches, si nécessaire -> Ne pas créer des branches de branches etc... , etc ...
 
-## Conventions pour les Messages de Commit -> Antonin
+## Conventions pour les Messages de Commit
+<!-- - Exigences pour les conventions des messages de commit -->
 
-- Exigences pour les conventions des messages de commit
--> mettre un message approprié etc...,.... mettre des version -> [FIX] [Features] [Minor,major,...,...]
+Les conventions pour les messages de commit sont essentielles pour maintenir un historique explicite. La convention suivante est simple et intuitive, garantissant des messages de commit de qualité. Il est également préférable d'utiliser une langue commune, en l'occurrence l'anglais.
 
-https://www.conventionalcommits.org/en/v1.0.0/
+Le message du commit doit être structuré comme suit :
+```
+<type>[optional scope]: <description>
 
-## Conventions de Code -> Antonin
+[optional body]
 
-- Spécifications pour les conventions de code, si spécifiées
+[optional footer]
+```
+
+référence: https://www.conventionalcommits.org/en/v1.0.0/
+
+## Conventions de Code
+<!-- - Spécifications pour les conventions de code, si spécifiées -->
+
+Ce projet ne dispose pas de ses propres directives spécifiques, mais il suit rigoureusement les normes de codage propres au framework Django et au langage Python. Ces standards sont clairement définis dans leur documentation respective (ci-dessous). En outre, il est essentiel de maintenir un code compréhensible grâce à des opérations de refactoring et de le documenter adéquatement.
+
+- Django :\
 https://docs.djangoproject.com/en/dev/internals/contributing/writing-code/coding-style/
+- Python :\
 https://peps.python.org/pep-0008/
 
 ## Politiques de Publication -> Corentin
