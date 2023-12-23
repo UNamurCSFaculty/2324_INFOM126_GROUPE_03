@@ -87,6 +87,7 @@ if you want to make a bump version, you can use:
 ```console
 cz bump --increment <major|minor|patch>
 ```
+This will automatically add the latest modifications based on commits to the CHANGELOG file.
 
 Don't forget to push your commits:
 ```console
