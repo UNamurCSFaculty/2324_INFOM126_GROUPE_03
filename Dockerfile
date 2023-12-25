@@ -13,9 +13,8 @@ WORKDIR /usr/src/app/
 
 # COPY ./requirements.txt ./
 # RUN pip install --no-cache-dir -r ./requirements.txt
-COPY pyproject.toml poetry.lock* ./
-RUN poetry install --no-root --no-interaction
-
+COPY pyproject.toml poetry.lock* ./ ./requirements.txt ./
+RUN poetry install --no-root --no-interaction && pip install --no-cache-dir -r ./requirements.txt
 COPY ./ ./
 
 EXPOSE 80
