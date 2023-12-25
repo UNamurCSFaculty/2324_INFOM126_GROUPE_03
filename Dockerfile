@@ -8,7 +8,7 @@ RUN apk add --no-cache curl \
 
 ENV PYTHONUNBUFFERED=1
 ENV DEBUG=False
-
+ENV PATH="/root/.local/bin:$PATH"
 WORKDIR /usr/src/app/
 
 # COPY ./requirements.txt ./
