@@ -2,7 +2,7 @@
 
 FROM python:3.10-alpine
 
-# poetry uinstallation
+# poetry installation
 RUN apk add --no-cache curl \
     && curl -sSL https://install.python-poetry.org | python3 -
 

@@ -1,17 +1,21 @@
 # Guide de Contribution au Projet
 
-## Politique de Gestion des Branches -> Gerry
+## Politique de Gestion des Branches 
 
-- Explication de la politique de gestion des branches -> 
-- Directives sur la manière dont les contributeurs devraient nommer leurs branches : -> DevFeaturesNames
-- Basé sur les problèmes (issues)
-- Basé sur les noms des contributeurs
-- Placement des branches
+- Explication de la politique de gestion des branches ->
+    Une branche est créee pour chaque nouvelle feature en cours de développement afin d'éviter tout conflit avec la branche main qui est la branche qui est déploiyer sur phish.e-kot.be
 
-## Intégration dans la Branche Principale -> Gerry
+- Directives sur la manière dont les contributeurs devraient nommer leurs branches 
+   Si une nouvelle feature est en cours de développement, on nomme celle-ci selon le caneva suivant : DevFeatureName
 
-- Critères pour fusionner les branches dans la branche principale -> Regarder au lien et Merge avec main si tout les github actions sont passé
-- Configuration des permissions pour les branches, si nécessaire -> Ne pas créer des branches de branches etc... , etc ...
+
+- Basé sur les problèmes : Lorsqu'une issue est déclanchée, on crée un branche selon le caneva suivant afin de résoudre l'issue : IssueFeatureName 
+
+
+## Intégration dans la Branche Principale 
+
+Dans le contexte du cours de DevOps, l'intégration dans la branche principale constitue une étape cruciale du processus de développement continu. Une fois que la branche de développement a réussi avec succès l'ensemble des GitHub Actions, comprenant la construction (Django Build), les tests unitaires (Django Test), et l'analyse statique de code avec SonarQube, elle devient éligible pour être fusionnée dans la branche principale (main). Cette approche garantit que seules les modifications qui respectent les normes de qualité et de fonctionnalité préalablement définies sont intégrées dans la branche principale du projet. De plus, afin de maintenir une synchronisation constante, il est impératif que chaque mise à jour de la branche principale soit fusionnée avec la branche de développement, assurant ainsi une continuité fluide du processus de développement et une gestion efficace des versions du logiciel. Ce mécanisme d'intégration régulière dans la branche principale contribue à la stabilité et à la qualité du code du projet tout en facilitant la collaboration au sein de l'équipe de développement.
+
 
 ## Conventions pour les Messages de Commit
 <!-- - Exigences pour les conventions des messages de commit -->
