@@ -8,7 +8,6 @@ RUN apk add --no-cache curl \
 
 ENV PYTHONUNBUFFERED=1
 ENV DEBUG=False
-ENV SECURE_DEFAULT='django-insecure-qz-n3-z4%@0l1d+e!%9cb=r=rb2)s&0v4ct8=@v%6lh0_8_16&'
 ENV PATH="/root/.local/bin:$PATH"
 WORKDIR /usr/src/app/
 
